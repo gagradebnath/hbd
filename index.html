@@ -273,7 +273,45 @@
             margin-top: 20px;
         }
 
-        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                margin-top: 5%;
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .button, .next-button {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1, h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .button, .next-button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+            .popup-content {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
