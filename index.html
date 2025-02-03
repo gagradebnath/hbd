@@ -11,6 +11,7 @@
             color: #333;
             margin-top: 15%;
             padding: 1;
+            display: none;
         }
 
         h1, h2 {
@@ -322,77 +323,77 @@
     <div class="">
         <!-- Page 1 -->
         <div class="card active container" id="page1">
-            <h1>Happy Birthday!</h1>
-            <p>Click the button to start the celebration!</p>
+            <h1>শুভ জন্মদিন প্রণয়ী 🥳🥳🥳!</h1>
+            <p>গণনকৌশলী অনুরাগীর শুভেচ্ছা নিও!🤖🤖😶‍🌫️😶‍🌫️</p>
             <a href="javascript:void(0);" class="button" onclick="showNextPage(2)">Click Me!</a>
         </div>
 
         <!-- Page 2 -->
         <div class="card container" id="page2">
-            <h2>Message 1</h2>
+            <h2># 9</h2>
             <p>"The journey of life is a journey of constant transformation. May you always find yourself blooming in new, beautiful directions!"</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(3)">Next</a>
         </div>
 
         <!-- Page 3 -->
         <div class="card container" id="page3">
-            <h2>Message 2</h2>
+            <h2># 8</h2>
             <p>"Like a river that flows through the landscape, your spirit carries those around you to better places. Keep shining!"</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(4)">Next</a>
         </div>
 
         <!-- Page 4 -->
         <div class="card container" id="page4">
-            <h2>Message 3</h2>
+            <h2># 7</h2>
             <p>"A year older, a year wiser. But you always knew that, didn’t you? Keep growing, keep evolving." </p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(5)">Next</a>
         </div>
 
         <!-- Page 5 -->
         <div class="card container" id="page5">
-            <h2>Message 4</h2>
+            <h2># 6</h2>
             <p>"May your days be filled with sunshine, your nights with sweet dreams, and every moment in between with happiness."</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(6)">Next</a>
         </div>
 
         <!-- Page 6 -->
         <div class="card container" id="page6">
-            <h2>Message 5</h2>
+            <h2># 5</h2>
             <p>"Life is full of surprises, and with you, every surprise is a gift. I hope this year brings you even more joy!"</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(7)">Next</a>
         </div>
 
         <!-- Page 7 -->
         <div class="card container" id="page7">
-            <h2>Message 6</h2>
+            <h2># 4</h2>
             <p>"Every year is a new opportunity to discover your potential, and I believe you're just getting started."</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(8)">Next</a>
         </div>
 
         <!-- Page 8 -->
         <div class="card container" id="page8">
-            <h2>Message 7</h2>
+            <h2># 3</h2>
             <p>"In a world of endless choices, you stand out as a person of beauty, intelligence, and grace. Here's to you!"</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(9)">Next</a>
         </div>
 
         <!-- Page 9 -->
         <div class="card container" id="page9">
-            <h2>Message 8</h2>
+            <h2># 2</h2>
             <p>"As time moves forward, may your path be filled with moments that leave you breathless with joy and peace."</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(10)">Next</a>
         </div>
 
         <!-- Page 10 -->
         <div class="card container" id="page10">
-            <h2>Message 9</h2>
+            <h2># 1</h2>
             <p>"A birthday is just a reminder that you are truly extraordinary and loved by so many. Enjoy this day and all it brings!"</p>
             <a href="javascript:void(0);" class="next-button" onclick="showNextPage(11)">Next</a>
         </div>
 
         <!-- Page 11 (Blow the Candle) -->
         <div class="card container" id="page11">
-            <h2>Message 10</h2>
+            <h2># 0</h2>
             <p>"And finally, may this year be the best one yet. Filled with new experiences, new friendships, and endless joy."</p>
             <div class="candle">
                 <div class="flame"></div>
@@ -501,6 +502,16 @@
             flame.style.opacity = 1; 
             popup.style.display = "none"; // Hide the popup when the close button is clicked
         }
+        window.onload = function() {
+            let password = prompt(" তোর মনের পাসওয়ার্ডটা বল 🤭🤭🤭:");
+            document.body.style.display = "none";
+            if (password === "38") {
+                document.body.style.display = "block";
+            } else {
+                alert("Incorrect password. Please reload the page and try again.");
+                document.body.style.display = "none";
+            }
+        };
 
     </script>
 </body>
