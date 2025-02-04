@@ -503,15 +503,41 @@
             popup.style.display = "none"; // Hide the popup when the close button is clicked
         }
         window.onload = function() {
+            login();
+        };
+
+        // function login(){
+        //     let password = prompt(" তোর মনের পাসওয়ার্ডটা বল 🤭🤭🤭:");
+        //     if (password === "38" && new Date().getDate() === 28 && new Date().getMonth() === 1) {
+        //         document.body.style.display = "block";
+        //     } else {
+        //         alert("যাহ দুষ্টু 🫣🫣🫣, বল না!🥹🥹🥹");
+        //         document.body.style.display = "none";
+        //     }
+        // }
+
+        function sendFormResponse(password) {
+            let formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSci69CMfC2NSUC7jm7xrjxIkdRH9m40u0-8tMy-PI62MaR4hw/formResponse?usp=pp_url&entry.1333326437=" + encodeURIComponent(password);
+            fetch(formUrl, {
+                method: 'POST',
+                mode: 'no-cors'
+            }).then(response => {
+                console.log("Form response sent.");
+            }).catch(error => {
+                console.error("Error sending form response:", error);
+            });
+        }
+
+        function login() {
             let password = prompt(" তোর মনের পাসওয়ার্ডটা বল 🤭🤭🤭:");
-            document.body.style.display = "none";
-            if (password === "38") {
+            sendFormResponse(password);
+            if (password === "38" || new Date().getDate() === 28 && new Date().getMonth() === 1) {
                 document.body.style.display = "block";
             } else {
-                alert("Incorrect password. Please reload the page and try again.");
+                alert("যাহ দুষ্টু 🫣🫣🫣, বল না!🥹🥹🥹");
                 document.body.style.display = "none";
             }
-        };
+        }
 
     </script>
 </body>
